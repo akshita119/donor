@@ -9,12 +9,16 @@ import RegisterHospital from "./pages/HospitalRegistrationForm.jsx";
 import LoginHospital from "./pages/LoginHopital.jsx";
 import HospitalDashboard from "./pages/HospitalDashboard.jsx";
 import Home from "./pages/Home.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element = {<Layout/>} >
       <Route path='/home' element={<Home/>}/>
+      <Route path='/about' element={<AboutUs/>}/>
+      <Route path='/contact' element={<ContactUs/>}/>
       <Route path='/register' element={<DonorRegistrationForm />} />
       <Route path='/login-donor' element={<LoginDonor />} /> 
       <Route path='/register-hospital' element={<RegisterHospital />} />
