@@ -23,7 +23,13 @@ function Home() {
         <p className="mt-4 text-lg max-w-3xl mx-auto text-gray-700">
           Blood donation is a vital act that helps save millions of lives each year. By donating blood, you can make a life-changing difference for someone in need. Whether it's for a patient undergoing surgery or someone suffering from an illness, your donation matters.
         </p>
-        <img src="https://via.placeholder.com/600x300" alt="Blood Donation" className="mt-6 rounded-lg shadow-lg"/>
+        <img 
+  src="https://images.pexels.com/photos/6823567/pexels-photo-6823567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
+  alt="Blood Donation" 
+  className="w-full h-64 mt-6 rounded-lg shadow-lg object-cover" 
+/>
+
+
       </section>
 
       {/* FAQ Section */}
