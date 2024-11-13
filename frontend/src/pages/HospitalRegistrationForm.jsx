@@ -6,20 +6,23 @@ function RegisterHospital() {
   const [city, setCity] = useState('');
   const [licenseNumber, setLicenseNumber] = useState('');
   const [contactNumber, setContactNumber] = useState('');
+  const [pinCode, setPinCode] = useState('');
+  const [email, setEmail] = useState(''); // New state for email
+  const [password, setPassword] = useState(''); // New state for password
   const [error, setError] = useState('');
 
   const handleRegister = (e) => {
     e.preventDefault();
 
     // Simple validation for the sake of this example
-    if (!name || !address || !city || !licenseNumber || !contactNumber) {
+    if (!name || !address || !city || !licenseNumber || !contactNumber || !pinCode || !email || !password) {
       setError('Please fill in all the fields');
       return;
     }
 
     // Call the registration API here (this can be replaced with your API integration)
     // For now, we are just logging the details
-    console.log('Hospital Registration:', { name, address, city, licenseNumber, contactNumber });
+    console.log('Hospital Registration:', { name, address, city, licenseNumber, contactNumber, pinCode, email, password });
 
     // On successful registration (assuming successful registration is based on some condition)
     // Redirect or do further processing here
@@ -91,16 +94,44 @@ function RegisterHospital() {
             />
           </div>
 
-          <div className="mb-6">
-            <label htmlFor="contactNumber" className="block text-gray-700">Contact Number</label>
+          <div className="mb-4">
+            <label htmlFor="pinCode" className="block text-gray-700">Pin Code</label>
             <input
-              type="tel"
-              id="contactNumber"
-              name="contactNumber"
-              value={contactNumber}
-              onChange={(e) => setContactNumber(e.target.value)}
+              type="text"
+              id="pinCode"
+              name="pinCode"
+              value={pinCode}
+              onChange={(e) => setPinCode(e.target.value)}
               className="w-full p-3 mt-2 border border-gray-300 rounded-lg"
-              placeholder="Enter contact number"
+              placeholder="Enter pin code"
+              required
+            />
+          </div>
+
+          <div className="mb-4">
+            <label htmlFor="email" className="block text-gray-700">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="w-full p-3 mt-2 border border-gray-300 rounded-lg"
+              placeholder="Enter email address"
+              required
+            />
+          </div>
+
+          <div className="mb-6">
+            <label htmlFor="password" className="block text-gray-700">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              className="w-full p-3 mt-2 border border-gray-300 rounded-lg"
+              placeholder="Enter password"
               required
             />
           </div>
