@@ -10,10 +10,10 @@ function Home() {
         <h1 className="text-4xl font-bold">Welcome to the Blood Donation Management System</h1>
         <p className="mt-4 text-xl">Save lives by donating blood. Join the cause today!</p>
         <div className="mt-8">
-          <Link to="/register" className="bg-white text-[#E63946] px-6 py-3 rounded-lg text-lg hover:bg-gray-200">Register as a Donor</Link>
+          {/* <Link to="/register" className="bg-white text-[#E63946] px-6 py-3 rounded-lg text-lg hover:bg-gray-200">Register as a Donor</Link> */}
           <Link to="/login-donor" className="ml-4 bg-white text-[#E63946] px-6 py-3 rounded-lg text-lg hover:bg-gray-200">Login as a Donor</Link>
           <Link to="/login-hospital" className="ml-4 bg-white text-[#E63946] px-6 py-3 rounded-lg text-lg hover:bg-gray-200">Login as a Hospital</Link>
-          <Link to="/register-hospital" className="ml-4 bg-white text-[#E63946] px-6 py-3 rounded-lg text-lg hover:bg-gray-200">Register as a Hospital</Link>
+          {/* <Link to="/register-hospital" className="ml-4 bg-white text-[#E63946] px-6 py-3 rounded-lg text-lg hover:bg-gray-200">Register as a Hospital</Link> */}
         </div>
       </section>
 
