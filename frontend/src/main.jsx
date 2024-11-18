@@ -14,6 +14,7 @@ import ContactUs from "./pages/ContactUs.jsx";
 import RequestBlood from "./pages/RequestBlood.jsx";
 import ViewInventory from "./pages/ViewInventory.jsx";
 import ManageRequests from "./pages/ManageRequests.jsx";
+import ManageInventory from "./pages/ManageInventory.jsx";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
       <Route path="/hospital-dashboard/request-blood" element={<RequestBlood />} />
       <Route path="/hospital-dashboard/view-inventory" element={<ViewInventory />} />
       <Route path="/hospital-dashboard/manage-requests" element={<ManageRequests />} />
+      <Route path="/hospital-dashboard/manage-inventory" element={<ManageInventory />} />
     </Route>
   )
 )

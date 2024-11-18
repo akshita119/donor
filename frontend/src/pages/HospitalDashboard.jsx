@@ -20,6 +20,14 @@ function HospitalDashboard() {
           Request Blood
         </Link>
 
+        {/* Manage Blood Inventory Button */}
+        <Link 
+          to="/hospital-dashboard/manage-inventory"
+          className="bg-[#E63946] text-white text-center px-6 py-4 rounded-lg text-lg font-semibold hover:bg-[#d82f3e]"
+        >
+          Manage Blood Inventory
+        </Link>
+
         {/* View Blood Inventory Button */}
         <Link 
           to="/hospital-dashboard/view-inventory"
