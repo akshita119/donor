@@ -1,10 +1,10 @@
-import  { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 function ManageRequests() {
   const [requests, setRequests] = useState([
-    { bloodType: 'A+', quantity: 2, status: 'Pending' },
-    { bloodType: 'O-', quantity: 1, status: 'Approved' },
-    { bloodType: 'B+', quantity: 3, status: 'Rejected' },
+    { bloodType: "A+", quantity: 2, status: "Pending" },
+    { bloodType: "O-", quantity: 1, status: "Approved" },
+    { bloodType: "B+", quantity: 3, status: "Rejected" },
     // Add more data here as needed
   ]);
 
@@ -45,7 +45,9 @@ function ManageRequests() {
 
       {/* Footer Section */}
       <footer className="bg-[#E63946] text-white text-center py-4 mt-auto w-full">
-        <p className="text-sm">© 2024 Blood Donation Management System. All rights reserved.</p>
+        <p className="text-sm">
+          © 2024 Blood Donation Management System. All rights reserved.
+        </p>
       </footer>
     </div>
   );
